@@ -3,9 +3,9 @@ name: 🧪 Test DivideService
 on:
   push:
     paths:
-      - '../DivideService/**'
+      - 'DivideService/**'
     pull_request:
-      - '../DivideService/**'
+      - 'DivideService/**'
 jobs:
   build:
     runs-on: ubuntu-latest
