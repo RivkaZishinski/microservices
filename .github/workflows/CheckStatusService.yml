@@ -2,8 +2,11 @@ name: 🧪 Test CheckStatusService
 
 on:
   push:
-    paths:
-      - "CheckStatusService/**"
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  paths:
+    - "CheckStatusService/**"
 jobs:
   build:
     runs-on: ubuntu-latest
