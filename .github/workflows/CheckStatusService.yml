@@ -2,6 +2,7 @@ name: 🧪 Test CheckStatusService
 
 on:
   push:
+      branches: [ "main" ]
     paths:
       - "CheckStatusService/**"
       - ".github/workflows/CheckStatusService.yaml"
