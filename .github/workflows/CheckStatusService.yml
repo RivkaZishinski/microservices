@@ -2,7 +2,6 @@ name: 🧪 Test CheckStatusService
 
 on:
   push:
-    branches: [ "main" ]
     paths:
       - "CheckStatusService/**"
 jobs:
