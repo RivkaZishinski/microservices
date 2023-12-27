@@ -30,7 +30,7 @@ jobs:
     #     ls
     - name: ⏬ Install dependencies
       run: |
-        pip install -r CheckStatusService/requirements.txt
+        pip install -r requirements.txt
     - name: ✅ cd services
       run: |
         cd CheckStatusService
