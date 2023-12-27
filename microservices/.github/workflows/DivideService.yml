@@ -3,8 +3,9 @@ name: 🧪 Test DivideService
 on:
   push:
     paths:
-      - "DivideService/**"
-      - ".github/workflows/DivideService.yaml"
+      - 'DivideService/**'
+    pull_request:
+      - 'DivideService/**'
 jobs:
   build:
     runs-on: ubuntu-latest
