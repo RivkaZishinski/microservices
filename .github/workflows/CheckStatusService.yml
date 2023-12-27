@@ -5,11 +5,15 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    paths:
-      - "CheckStatusService/**"
+    # paths:
+    #   - "CheckStatusService/**"
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: CheckStatusService/**
 
     steps:
     - name: 📂 Checkout
@@ -33,5 +37,4 @@ jobs:
         ls
     - name: ✅ Run tests
       run: |
-        pytest
-  
+        pytest test/
