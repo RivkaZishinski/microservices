@@ -34,4 +34,5 @@ jobs:
     #     ls
     - name: ✅ Run tests
       run: |
-        pytest test/
+        ls
+        pytest test
