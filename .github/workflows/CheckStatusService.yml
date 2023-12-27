@@ -27,6 +27,10 @@ jobs:
     - name: ⏬ Install dependencies
       run: |
         pip install -r CheckStatusService/requirements.txt
+    - name: ✅ cd services
+      run: |
+        cd CheckStatusService
+        ls
     - name: ✅ Run tests
       run: |
         pytest
