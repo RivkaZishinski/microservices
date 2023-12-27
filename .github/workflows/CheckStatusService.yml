@@ -20,7 +20,7 @@ jobs:
         cache: 'pip'
     - name: cd services
       run: |
-      cd CheckStatusService
+        cd CheckStatusService
     - name: ⏬ Install dependencies
       run: |
         pip install -r requirements.txt
