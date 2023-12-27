@@ -3,8 +3,6 @@ name: 🧪 Test CheckStatusService
 on:
   push:
       branches: [ "main" ]
-    paths:
-      - "CheckStatusService/**"
 jobs:
   build:
     runs-on: ubuntu-latest
