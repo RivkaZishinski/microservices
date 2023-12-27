@@ -5,15 +5,13 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    # paths:
-    #   - "CheckStatusService/**"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./CheckStatusService/**
+        working-directory: ./CheckStatusService
 
     steps:
     - name: 📂 Checkout
@@ -24,17 +22,10 @@ jobs:
       with:
         python-version: 3.11
         cache: 'pip'
-    # - name: cd services
-    #   run: |
-    #     cd CheckStatusService
-    #     ls
+
     - name: ⏬ Install dependencies
       run: |
         pip install -r requirements.txt
-    - name: ✅ cd services
-      run: |
-        cd CheckStatusService
-        ls
     - name: ✅ Run tests
       run: |
-        pytest test/
+        pytest test
