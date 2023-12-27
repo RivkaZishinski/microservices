@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: CheckStatusService/**
+        working-directory: ./CheckStatusService/**
 
     steps:
     - name: 📂 Checkout
