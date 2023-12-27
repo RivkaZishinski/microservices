@@ -3,7 +3,7 @@ name: 🧪 Test CheckStatusService
 on:
   push:
     paths:
-      - " CheckStatusService/**"
+      - "CheckStatusService/**"
       - ".github/workflows/CheckStatusService.yaml"
 jobs:
   build:

@@ -3,7 +3,7 @@ name: 🧪 Test DivideService
 on:
   push:
     paths:
-      - " DivideService/**"
+      - "DivideService/**"
       - ".github/workflows/DivideService.yaml"
 jobs:
   build:

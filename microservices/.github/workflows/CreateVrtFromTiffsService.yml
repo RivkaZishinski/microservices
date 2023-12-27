@@ -3,7 +3,7 @@ name: 🧪 Test CreateVrtFromTiffsService
 on:
   push:
     paths:
-      - " CreateVrtFromTiffsService/**"
+      - "CreateVrtFromTiffsService/**"
       - ".github/workflows/CreateVrtFromTiffsService.yaml"
 jobs:
   build:
